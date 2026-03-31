@@ -1,0 +1,38 @@
+
+pergunta1 = input("Você este no local do crime?")
+pergunta2 = input("Você conhece a vítima?")
+pergunta3 = input("Você já teve algum desentendimento com a vítima?")
+pergunta4 = input("Você estava próximo ao local na hora do ocorrido?")
+pergunta5 = input("Você tem algo que comprove sua inocência?")
+
+contagem = 0
+
+if pergunta1 == "sim":
+    print(contagem + 1)
+else:
+    print (contagem + 0)
+    
+    if pergunta2 == "sim":
+    print(contagem + 1)
+else: 
+    print (contagem + 0)
+
+    if pergunta3 == "sim":
+    print(contagem + 1)
+else :
+    print (contagem + 0)
+
+    if pergunta4 == "sim":
+    print(contagem + 1)
+else :
+    print (contagem + 0)
+
+    if pergunta5 == "sim":
+    print(contagem + 1)
+else :
+    print (contagem + 0)
+
+if contagem >= 3:
+    print ("Pessoa considerada suspeita.")
+else:
+    print("Pessoa não considerada suspeita.")
