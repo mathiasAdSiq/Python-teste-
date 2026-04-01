@@ -1,0 +1,28 @@
+valor_produto = float(input("Digite o valor:"))
+print("1 - A vista (12 porcento de desconto)")
+print("2 - em 2x (6 porcento de desconto)")
+print("3 - em 3x (2.5 porcento de desconto)")
+print("4 - em 4x (9 porcento de juros)")
+opcao = int(input("Digite a opção:"))
+
+if opcao == 1:
+    valor_final = valor_produto*0.88
+    print (valor_final,"Reais")
+elif opcao == 2:
+    valor_final = valor_produto*0.94
+    parcela = valor_final / 2
+    print ("Valor_final:",valor_final, "Reais")
+    print("Valor da parcela:",parcela,"Reais")
+elif opcao == 3:
+    valor_final = valor_produto*0.975
+    parcela = valor_final / 3
+    print ("Valor final:",valor_final, "Reais")
+    print("Valor da parcela:",parcela,"Reais")
+elif opcao == 4:
+    valor_final = valor_produto*1.09
+    parcela = valor_final / 4
+    #print(f'Valor final:{valor_final:.2f}')
+    print("Valor da parcela:",parcela,"Reais")
+    print (valor_final,"Reais")
+else:
+    print("Opção inválida!")
