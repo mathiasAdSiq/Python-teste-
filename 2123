@@ -1,0 +1,12 @@
+nome_treinador = input("Digite o nome do treinador:")
+salario = float(input("Digite o atual salario do treinador:"))
+experiencia = float(input("Digite a quantia de anos de experiência do treinador:"))
+
+if salario <= 2000 and experiencia >=5:
+    aumento = salario*0.10 
+    novo_salario = salario*1.10
+    print("nome do treinador:",nome_treinador ,aumento , novo_salario)
+else: 
+    aumento = salario*0.05
+    novo_salario = salario*1.05
+    print("nome do treinador:",nome_treinador ,aumento , novo_salario)
